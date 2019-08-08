@@ -1,0 +1,61 @@
+//Copy String Manually Without Using strcpy()
+#include <stdio.h>
+int main()
+{
+    char str1[100], str2[100], i;
+    printf("Enter string str1: ");
+    scanf("%s",str1);
+    for(i = 0; str1[i] != '\0'; ++i)
+    {
+        str2[i] = str1[i];
+    }
+    str2[i] = '\0';
+    printf("String str2: %s", str2);
+    return 0;
+}
+
+//Concatenate String Manually Without Using strcat()
+#include <stdio.h>
+int main()
+{
+   char str1[100], str2[100], i, j;
+   printf("\nEnter first string: ");
+   scanf("%s",str1);
+   printf("\nEnter second string: ");
+   scanf("%s",str2);
+
+   for(i=0; str1[i]!='\0'; ++i);
+   for(j=0; str2[j]!='\0'; ++j, ++i)
+   {
+      str1[i]=str2[j];
+   }
+printf("\nOutput: %s",str1);
+}
+
+//Compare String Manually Without Using strcmp()
+#include <stdio.h>
+int main()
+{
+   char str1[100], str2[100], i, j;
+   printf("\nEnter first string: ");
+   scanf("%s",str1);
+   printf("\nEnter second string: ");
+   scanf("%s",str2);
+
+  	for(i = 0; str1[i] == str2[i] && str1[i] == '\0'; i++);
+		   
+  	if(str1[i] < str2[i])
+   	{
+   		printf("\n str1 is Less than str2");
+	}
+	else if(Str1[i] > Str2[i])
+   	{
+   		printf("\n str2 is Less than str1");
+	}
+	else
+   	{
+   		printf("\n str1 is Equal to str2");
+	}
+  	
+  	return 0;
+}
