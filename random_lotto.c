@@ -9,14 +9,10 @@ int play(int attempt[])
     for(int i = 1; i < 6; i++)
     {
         int random_number;
-        generate:
         random_number = rand() % 49 + 1;
         for(int j = 0; j < i; j++)
         {
-            if(random_number == draw[j])
-            {
-                goto generate;
-            }
+            if(random_number == draw[j])            
         }
         draw[i] = random_number;
     }
