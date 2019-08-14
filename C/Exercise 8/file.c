@@ -8,7 +8,7 @@ void nLine(int n,char *fileName)
 	char line[80];
 	int lineNumber=0;  
 	FILE *fp;
-	LNL=malloc(n*sizeof(int));
+	posOfLine=malloc(n*sizeof(int));
 	if ((fp = fopen(f_name, "r")) != NULL)
 	{
 		for (lineNumer = 0; !feof(fp); ++lineNumer) /* while not end of file*/
