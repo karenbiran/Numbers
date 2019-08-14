@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include"TD.h"
+
+int main()
+{
+        printf("press 1 for Date \n");
+        printf("press 2 for Time \n");
+        printf("press -1 to exit \n");
+        
+    return 0;
+}
