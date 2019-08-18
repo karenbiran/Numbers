@@ -71,7 +71,7 @@ int main()
 {
 	int num;
 	char binary[32], s1[30], s2[10];
-/*	
+	
 	printf("Please enter a number: ");
 	scanf("%d",&num);
 	Int2Bin(num, binary);
@@ -79,7 +79,7 @@ int main()
 	printf("Please enter a binary string: ");
 	scanf("%s", binary);
 	printf("The value is %d ", Bin2Int(binary));
-*/
+
 	printf("Please enter s1: ");
 	scanf("%s", s1);
 	printf("Please enter s2: ");
