@@ -1,5 +1,5 @@
-#ifndef bitwise
-#define bitwise
+#ifndef bitsBitwise
+#define bitsBitwise
 
 typedef struct
 {
