@@ -91,8 +91,30 @@ int main()
 
 
 
-int location(s1, s2)
-{
+int location(char*a,char*b){
+   int i,j,indexB,location=-1;
+       for(i=0;i<strlen(a);i++){
+              indexB=0;
+              if (a[i]==b[indexB]){
+                   j=i+1;
+                   indexB++;
+                    while((a[j]==b[indexB])&&(b[indexB]!='\0')&&(a[j]!='\0')){
+               
+                              j++;
+                              indexB++;
+                   
+                              
+                     }
+                     if(b[indexB]=='\0'){
+                          location=i;
+                           break;
+                     }
+
+               } 
+         }
+     return location;
+
+}
 
 
 }
